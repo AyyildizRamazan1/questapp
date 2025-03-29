@@ -33,7 +33,7 @@ public class PostService {
     }
 
     public Post createOnePost(PostCreateDto newPostDto) {
-        User user = userService.getOneUser(newPostDto.getUserId());
+        User user = userService.getOneUserById(newPostDto.getUserId());
         if (user == null)
             return null;
         Post toSave = new Post();
