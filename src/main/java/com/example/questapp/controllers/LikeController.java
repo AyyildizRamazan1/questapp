@@ -29,12 +29,12 @@ public class LikeController {
         return likeService.createOneLike(request);
     }
 
-    @GetMapping("{/likeId}")
+    @GetMapping("/{likeId}")
     public Like getOneLike(@PathVariable Long likeId) {
         return likeService.getOneLikeById(likeId);
     }
 
-    @GetMapping("{/likeId}")
+    @DeleteMapping("/{likeId}")
     public void deleteOneLike(@PathVariable Long likeId) {
         likeService.deleteOneLikeById(likeId);
     }

@@ -1,7 +1,9 @@
 package com.example.questapp.responses;
 
 import com.example.questapp.entities.Like;
+import lombok.Data;
 
+@Data
 public class LikeResponse {
 
     Long id;
